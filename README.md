@@ -15,7 +15,7 @@
 
 ## Om prosjektet
 
-Byggmakker Gravdal er en byggevarebedrift tilknyttet Byggmakker-kjeden som betjener et betydelig B2B-segment av håndverkere og entreprenører. Bedriften bruker i dag erfaringsbasert varebestilling og opplever tilbakevendende utsalgssituasjoner for trelast i høysesong.
+Byggmakker Gravdal er en byggevarebedrift tilknyttet Byggmakker-kjeden som utelukkende betjener profesjonelle aktører som håndverkere og entreprenører. Bedriften bruker i dag erfaringsbasert varebestilling og opplever tilbakevendende utsalgssituasjoner for trelast i høysesong.
 
 Prosjektet analyserer ukentlige salgsdata (jan 2024 – apr 2026) for fire produkter og sammenligner tre prognosemodeller for å finne det beste grunnlaget for datadrevne bestillingsbeslutninger.
 
@@ -36,7 +36,7 @@ Prosjektet analyserer ukentlige salgsdata (jan 2024 – apr 2026) for fire produ
 
 - **Data:** 116 ukentlige observasjoner per produkt fra Byggmakker Gravdals ERP-system
 - **Modeller:** Naiv referansemodell, SARIMA(1,1,1)(1,0,1)₁₃, Gradient Boosting Regressor
-- **Evaluering:** 80/20 trenings-/testsplit — RMSE, MAE og MAPE
+- **Evaluering:** 80/20 trenings-/testsplit; RMSE, MAE og MAPE
 - **Lagerstyring:** Sikkerhetslager (SS), bestillingspunkt (ROP) og EOQ ved 95 % servicegrad
 - **Verktøy:** Python (pandas, statsmodels, scikit-learn)
 
@@ -58,9 +58,11 @@ SARIMA gir lavest prognosefeil i testperioden (lavsesong) for alle fire produkte
 ## Innhold i dette repoet
 
 ```
-├── 001 info/          README (denne filen)
-├── 003 references/    Referanseliste med DOI-er (APA 7)
-├── 004 data/          Rådata (Excel) og prosesserte analyseresultater (CSV)
-├── 005 report/        Rapportkapitler (Markdown), Python-skript og figurer
-└── 014 fase 4/        Ferdig rapport (rapport.docx)
+├── 000 templates/     Maler fra kurset
+├── 003 references/    Referanseliste med DOI-er (APA 7) og kilde-PDF-er
+├── 004 data/          Rådata (Excel), prosesserte CSV-er, skript og figurer
+├── 005 report/        Ferdig rapport (PDF)
+├── 011 fase 1/        Proposal
+├── 012 fase 2/        Plan
+└── 013 fase 3/        Review
 ```
